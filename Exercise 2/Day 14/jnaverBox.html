@@ -75,16 +75,16 @@
                             <a href="#"><div class="item1-7"></div></a>
                         </div>
                         <div class="inline-block item2">
-                            <a href="#"><div class="item2-1"></div></a>
-                            <a href="#"><div class="item2-2"></div></a>
-                            <a href="#"><div class="item2-3"></div></a>
-                            <a href="#"><div class="item2-4"></div></a>
-                            <a href="#"><div class="item2-5"></div></a>
-                            <a href="#"><div class="item2-6"></div></a>
-                            <a href="#"><div class="item2-7"></div></a>
-                            <a href="#"><div class="item2-8"></div></a>
-                            <a href="#"><div class="item2-9"></div></a>
-                        </div>
+                            <a href="#"><div class="item2-1 back-img dici"></div></a>
+                            <a href="#"><div class="item2-1 back-img newsi"></div></a>
+                            <a href="#"><div class="item2-1 back-img stocki"></div></a>
+                            <a href="#"><div class="item2-1 back-img dealeri"></div></a>
+                            <a href="#"><div class="item2-1 back-img mapi"></div></a>
+                            <a href="#"><div class="item2-1 back-img moviei"></div></a>
+                            <a href="#"><div class="item2-1 back-img musici"></div></a>
+                            <a href="#"><div class="item2-1 back-img booki"></div></a>
+														<a href="#"><div class="item2-1 back-img webtooni"></div></a>
+												</div>
                         <div class="inline-block item3"></div>
 												<div class="inline-block item4"></div>
                         <div class="inline-block item5">
@@ -103,7 +103,21 @@
 														</li>
 													</ul>
 												</div>
-												<div class="real-search-box"></div>
+												<div class="real-search-box">
+													<div class="real-top">급상승 검색어</div>
+													<div class="real-rank">
+														<a href="#" class="rank rank-left">1~10</a>
+														<a href="#" class="rank rank-right">11~20</a>
+													</div>
+														<ul class="rank-lists">
+															<li class="rank-list">1 파란컴퓨터학원</li>
+															<li class="rank-list">2 파란아트학원</li>
+														</ul>
+														<ul class="rank-lists">
+															<li class="rank-list">11 레드컴퓨터학원</li>
+															<li class="rank-list">12 레드아트학원</li>
+														</ul>
+												</div>
 												<div class="inline-block item6"></div>
                 	</div>   
             	</div>            
@@ -113,12 +127,44 @@
 						<div class="sub-menu">
 							<div class="sub-menu-inner">
 							<div class="sub-menu-icons">
-								<a href="#" class="all-service">서비스 전체보기</a>
-								<a href="#" class="menu-setting">메뉴설정</a>
 								<a href="#" class="menu-close">
-									<span></span>
-								</a>
+										<span></span>
+									</a>
+								<a href="#" class="sub-menu-a menu-setting">메뉴 설정</a>
+								<a href="#" class="sub-menu-a all-service">서비스 전체보기</a>
+								<a href="#" class="sub-menu-a cancel display-none">취소</a>	
+								<a href="#" class="sub-menu-a ok display-none">확인</a>	
+								<a href="#" class="sub-menu-a init display-none">
+									<span class="initicon"></span>
+									<p class="inittext">초기화</p></a>								
 							</div>
+							<div class="sub-menu-div">
+								<div>
+									<input type="checkbox" id="dic" value="dici" class="display-none">
+									<label for="dic">사전</label>
+								</div>
+								<div>
+									<input type="checkbox" id="news" value="newsi" class="display-none">
+									<label for="news">뉴스</label>
+								</div>
+								<div>
+									<input type="checkbox" id="stock" value="stocki" class="display-none">
+									<label for="stock">증권</label>
+								</div>
+								<div>
+									<input type="checkbox" id="dealer" value="dealeri" class="display-none">
+									<label for="dealer">부동산</label>
+								</div>
+								<div>
+									<input type="checkbox" id="map" value="mapi" class="display-none">
+									<label for="map">지도</label>
+								</div>
+								<div>
+									<input type="checkbox" id="movie" value="moviei" class="display-none">
+									<label for="movie">영화</label>
+								</div>
+							</div>
+							<div class="sub-menu-div"></div>
 						</div>
 					</div>
             <div class="bottom-inner">
@@ -197,7 +243,10 @@
                                     <li>
                                         <a href="#">
                                             <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173124306.png" alt="">
-                                        </a>
+																				</a>
+																				<div>
+																					123
+																				</div>
                                     </li>
                                     <li>
                                         <a href="#">
@@ -282,7 +331,15 @@
                                     <li>
                                         <a href="#">
                                             <img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173124306.png" alt="">
-                                        </a>
+																				</a>
+																				<div>
+																				<span class="api-popup">
+																					<a href="#" class="api-popup-btn">구독</a>
+																				</span>
+																				<span class="api-popup">
+																					<a href="#" class="api-popup-btn">기사보기</a>
+																				</span>
+																			</div>
 																		</li>
 																	</ul>
 																	<i class="border-right"></i>
@@ -307,35 +364,58 @@
                         <div class="box5">
                             <div class="box5-top">
                                 <div class="box5-item1">
-                                        <a href="#" class="day">10.31.(수)</a>
-                                        <span class="box5-line"></span>
-                                        <i class="fas fa-lock"></i>
-                                        <a href="#" class="location">
-                                            청주시 용암동
-                                            <i class="fas fa-angle-right"></i>
-                                        </a> 
+																	<a href="#" class="day">10.31.(수)</a>
+																	<span class="box5-line"></span>
+																	<i class="fas fa-lock"></i>
+																	<a href="#" class="location">
+																			청주시 용암동
+																			<i class="fas fa-angle-right"></i>
+																	</a> 
+																	<a href="#" class="location">
+																			스포츠
+																			<i class="fas fa-angle-right"></i>
+																	</a> 
+																	<a href="#" class="location">
+																			날씨
+																			<i class="fas fa-angle-right"></i>
+																	</a> 
+																	<a href="#" class="location">
+																			뉴스
+																			<i class="fas fa-angle-right"></i>
+																	</a> 
+																	<a href="#" class="location">
+																			환율
+																			<i class="fas fa-angle-right"></i>
+																	</a> 
+																	<a href="#" class="location">
+																			증시
+																			<i class="fas fa-angle-right"></i>
+																	</a> 
                                 </div>                                         
                                 <div class="box5-item2">
-                                    <b class="color-black">5</b>/7
+																	<b class="color-black">1</b>/6
                                 </div>
                                 <div class="box5-item3">
-                                    <a href="#" class="box5-prev">
-                                        <i class="btn-prev"></i>
-                                    </a>
-                                    <a href="#" class="box5-next">
-                                        <i class="btn-next"></i>
-                                    </a>
+																	<a href="#" class="box5-prev">
+																		<i class="btn-prev"></i>
+																	</a>
+																	<a href="#" class="box5-next">
+																		<i class="btn-next"></i>
+																	</a>
                                 </div>
-                            </div>
-                            <div class="box5-bottom">
-                            </div> 
-                            
+                            </div>                         
+														<div class="box5-bottom">1</div>
+														<div class="box5-bottom">2</div>
+														<div class="box5-bottom">3</div>
+														<div class="box5-bottom">4</div>
+														<div class="box5-bottom">5</div>
+														<div class="box5-bottom">6</div>
                         </div>
                         <div class="box6">                            
-                            <a href="#" target="_blank">
-                            <img src="https://ssl.pstatic.net/tveta/libs/1216/1216257/0125aa3baf871471a8d4_20181024191227594.jpg" width="330px", height="148px">
-                            </a>
-                            </div>
+													<a href="#" target="_blank">
+													<img src="https://ssl.pstatic.net/tveta/libs/1216/1216257/0125aa3baf871471a8d4_20181024191227594.jpg" width="330px", height="148px">
+													</a>
+                        </div>
                     </div>                        
                 </div>
             </div>
