@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main board</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+			<input type="button" onclick="window.location.href='http://127.0.0.1:3000/login'"value="로그인하기">
+    <!--
+      일반적인 변수(string, number)데이터를 표시하고 싶을 때는 하기 태그
+       <%= %>
+
+       자바스크립트 코드(html 코드도 작성 가능)를 작성하고 싶은 경우에는 하기 태그
+       <%   %>
+
+       ejs 파일 내에서 자바스크립트 코드를 주석하려면 <%# %> 태그를 사용
+    -->
+    <table border="1">
+        <tr>
+          <td>번호</td>
+          <td>제목</td>
+          <td>작가</td>
+          <td>내용</td>
+          <td>만든일</td>
+					<td>가능여부</td>		
+          <td>비밀여부</td>       
+        </tr>
+    <%
+      for(i = 0; i < send_data.length; i++){  
+  %>
+
+      <tr>
+        <td><%= send_data[i].Board_seq %></td>
+        <td><a href="/read/<%= send_data[i].Board_seq %>"><%= send_data[i].Title %></a></td>
+        <td><%= send_data[i].Writer_seq %></td>
+        <td><%= send_data[i].Contents %></td>
+        <td><%= send_data[i].Created_at %></td>
+				<td><%= send_data[i].Enable %></td>
+        <td><%= send_data[i].Secret %></td>       
+      </tr>
+      <%
+    }
+    %>
+    </table>
+	<form method="post" action="/search">
+		<select name="searchTypeInput" id="searchTypeInput">
+			<option value="title" selected="selected">글제목</option>
+			<option value="contents">글내용</option>
+			<option value="number">글번호</option>		
+		</select>
+
+		<input type="text" name="keywordInput" id="keywordInput" placeholder="검색 내용을 입력하세요">
+		<input type="submit" value="검색하기">
+	</form>
+		<input type="button" onclick="window.location.href='http://127.0.0.1:3000/write'" value="글쓰기">
+	</body>
+
+</html>

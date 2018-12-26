@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+    <table border = "1">
+    <tr>
+        <td>글번호</td>
+        <td><%= send_data[0].Board_seq %></td>
+    </tr>
+    <tr>
+        <td>제목</td>
+        <td><%= send_data[0].Title %></td>
+    </tr>
+    <tr>
+        <td>이름</td>
+        <td><%= send_data[0].Writer_seq %></td>
+    </tr>
+    <tr>
+        <td>조회수</td>
+        <td><%= send_data[0].View_count %></td>   
+    </tr>
+    <tr>
+        <td>추천수</td>
+        <td><%= send_data[0].Best_count %></td>  
+    </tr>
+    <tr></tr>
+        <td>카테고리</td>
+        <td><%= send_data[0].Secret %></td>  
+    <tr>
+        <td>내용</td>
+        <td><%= send_data[0].Contents %></td>  
+    </tr>
+    <tr>
+        <td>수정일</td>
+        <td><%= send_data[0].Updated_at %></td>  
+    </tr>
+    <tr>
+        <td>작성일</td>
+        <td><%= send_data[0].Created_at %></td>  
+		</tr>
+		<tr>
+			<td coldspan="2">
+				<input type="button" value="추천하기">
+				<input type="button" value="수정하기" onclick="window.location.href='http://127.0.0.1:3000/update/<%= send_data[0].Board_seq%>'">
+				<input type="button" value="삭제하기" onclick="window.location.href='http://127.0.0.1:3000/del/<%= send_data[0].Board_seq%>'">	
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

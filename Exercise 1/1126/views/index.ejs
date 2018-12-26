@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+		 <!-- 서버에서 전달한 값을 클라이언트가 javascript로 활용하기 1 -->
+		 <!-- 웹페이지 안에 자바스크립트 코드를 넣었을 경우 ejs 태그를 활용하여 서버가 전달한 값을 표시한다. -->
+		<script>
+			alert('<%= message %>');
+		</script>
+				
+		<!-- 서버에서 전달한 값을 클라이언트가 javascript로 활용하기 2 -->
+		<!-- 자바스크립트 코드가 별도의 파일로 존재할 경우
+		자바스크립트 파일 안의 코드에 직접 ejs 태그를 활용할 수 없다.
+		하지만 자바스크립트 함수 안에 매개변수로 줄 수 있으므로 
+		함수를 만들어 서버에서 전달한 값을 자바스크립트 코드에 전달한다. -->
+		<script type="text/javascript" src="./javascripts/test.js"></script>
+  </head>
+  <body>
+		<%= message %>
+    <h1><%= title %></h1>
+		<p>Welcome to <%= title %></p>
+		<script>
+		myAlert('<%= message %>');</script>
+  </body>
+</html>

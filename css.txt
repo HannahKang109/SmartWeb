@@ -1,0 +1,16 @@
+p 태그 기본 block
+b 태그 기본 Inline-block font weight x 
+a 태그 기본 Inline 
+가로로 가려면 inline-block
+테이블인 경우 인라인 블락 지정할 필요 없이 가로로 배열됨
+
+absolute
+relative
+
+id=1000
+class=100
+tag=10
+
+
+컴퓨터 - 포지션 앱솔루트
+컴퓨터 책상 - 포지션 렐러티브
